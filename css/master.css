@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Cards */
+.card {
+  padding: 40px 45px;
+  color: hsl(0, 0%, 95%);
+}
+
+.card__img {
+  margin-bottom: 30px;
+}
+
+/* Sedans */
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+/* SUVs */
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+/* Luxury */
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Text Decoration */
+.card__title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.card__text {
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.5;
+  opacity: 0.6;
+  margin-bottom: 80px;
+}
+
+/* Buttons */
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+.card__button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 25px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card__button-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.card__button-1:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+  opacity: .8;
+  cursor: pointer;
+}
+
+.card__button-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.card__button-2:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  opacity: .8;
+  cursor: pointer;
+}
+
+.card__button-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.card__button-3:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+  opacity: .8;
+  cursor: pointer;
+}
+
+/* Attribution */
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.attribution a {
+  text-decoration: none;
+  transition: color .5s linear;
+}
+
+.attribution a:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+@media (max-width: 750px) {
+  main {
+    height: auto;
+  }
+
+  .container {
+    margin: 80px 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Text Decoration */
+  .card__text {
+    margin-bottom: 30px;
+  }
+}
